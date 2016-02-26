@@ -1,4 +1,14 @@
 {% extends "base.html" %}
+{% block menu %}
+	<div class="col-4">
+		<h4>FunnyD</h4>
+	</div>
+	<div class="col-6">
+	</div>
+	<div class="col-2">
+		<a href="{% url 'admon_ingresar' %}" class="btn btn-primary">Administración</a>
+	</div>
+{% endblock menu %}
 {% block content %}
-	<h2>Inicio</h2>
+	<h4> Bienvenido a FunnyD</h4>
 {% endblock content %}

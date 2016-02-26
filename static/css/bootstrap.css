@@ -1582,6 +1582,7 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
+/*
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1603,6 +1604,7 @@ pre code {
     width: 1170px;
   }
 }
+*/
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -3061,6 +3063,7 @@ a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none;
 }
+/*
 .btn-default {
   color: #333;
   background-color: #fff;
@@ -3084,6 +3087,7 @@ fieldset[disabled] a.btn {
   background-color: #e6e6e6;
   border-color: #adadad;
 }
+
 .btn-default:active:hover,
 .btn-default.active:hover,
 .open > .dropdown-toggle.btn-default:hover,
@@ -3118,6 +3122,7 @@ fieldset[disabled] .btn-default.focus {
   color: #fff;
   background-color: #333;
 }
+/*
 .btn-primary {
   color: #fff;
   background-color: #337ab7;
@@ -3403,6 +3408,7 @@ fieldset[disabled] .btn-danger.focus {
   color: #d9534f;
   background-color: #fff;
 }
+*/
 .btn-link {
   font-weight: normal;
   color: #337ab7;
@@ -4229,17 +4235,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-header,
+/*.container > .navbar-header,*/
 .container-fluid > .navbar-header,
-.container > .navbar-collapse,
+/*.container > .navbar-collapse,*/
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header,
+  /*.container > .navbar-header,*/
   .container-fluid > .navbar-header,
-  .container > .navbar-collapse,
+  /*.container > .navbar-collapse,*/
   .container-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
@@ -4979,7 +4985,7 @@ a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
-.container .jumbotron,
+/*.container .jumbotron,*/
 .container-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;
@@ -4993,7 +4999,7 @@ a.badge:focus {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .jumbotron,
+  /*.container .jumbotron,*/
   .container-fluid .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
@@ -6467,8 +6473,8 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
-.container:before,
-.container:after,
+/*.container:before,
+.container:after,*/
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
@@ -6500,7 +6506,7 @@ button.close {
 }
 .clearfix:after,
 .dl-horizontal dd:after,
-.container:after,
+/*.container:after,*/
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
