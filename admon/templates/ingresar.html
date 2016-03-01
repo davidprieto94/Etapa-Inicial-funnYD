@@ -1,24 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
-	<div class="well form-admon-content">
-		<!--
-		<div class="row center form-admon-title">
-			<h3></h3>
+<div class="well form-admon-content">
+	<h4>Administración funnyD</h4>
+	<div class="login-form">
+		<form method="POST">
+		{% csrf_token %}
+		<div class="form-group">
+			{{ form.username }}
 		</div>
-		-->
-		<div class="login-form">
-			<form method="POST">
-		        <div class="form-group">
-		          <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name">
-		          <label class="login-field-icon fui-user" for="login-name"></label>
-		        </div>
-		        <div class="form-group">
-		          <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass">
-		          <label class="login-field-icon fui-lock" for="login-pass"></label>
-		        </div>
-
-		        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Ingresar">
-			</form>
-          </div>
+		<div class="form-group">
+			{{ form.password }}
+		</div>
+		<input type="submit" class="btn btn-primary btn-lg btn-block" value="Ingresar">
+		</form>
 	</div>
+	{% if form.errors %}
+		{{ form.non_field_errors.as_ul|cut:"*" }}
+	{% endif %}
+</div>
+
 {% endblock content %}

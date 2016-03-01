@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>FunnyD</title>
 	<link rel="stylesheet" href="{% static "css/flat-ui.css" %}">
+	<!--<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">-->
 	<link rel="stylesheet" href="{% static "css/styles.css" %}">
 	<script src="{% static "js/jquery.min.js" %}" ></script>
 	<script src="{% static "js/flat-ui.js" %}" ></script>
@@ -12,10 +13,8 @@
 <body>
 	<div class="container">
 		<div class="menu middle flex">
-			<nav class="navbar navbar-embossed menu-nav row middle">
-				{% block menu %}
-				{% endblock menu %}
-			</nav>
+			{% block menu %}
+			{% endblock menu %}
 		</div>
 		<div class="content-view center">
 			{% block content %}

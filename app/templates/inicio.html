@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% block menu %}
-	<div class="col-4">
-		<h4>FunnyD</h4>
-	</div>
-	<div class="col-6">
-	</div>
-	<div class="col-2">
-		<a href="{% url 'admon_ingresar' %}" class="btn btn-primary">Administración</a>
-	</div>
+	{% include "menu_inicio.html" %}
 {% endblock menu %}
 {% block content %}
 	<h4> Bienvenido a FunnyD</h4>
