@@ -10,12 +10,13 @@ from usuarios.models import usuariosModel
 def ingresar(request):
 	return render(request, "ingresar.html")
 
-
+# View: maneja la logica de ingreso al sistema
 class loginAdmonView(FormView):
 	form_class = loginAdmonForm
 	template_name = 'ingresar.html'
 	success_url = '/admon/'
 
+	# validadores para ingresar
 	def form_valid(self, form):
 		usuario = get_or_none(usuariosModel, user=form.user_cache)
 		if usuario is None:

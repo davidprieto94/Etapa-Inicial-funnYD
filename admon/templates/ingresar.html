@@ -16,6 +16,8 @@
 	</div>
 	{% if form.errors %}
 		{{ form.non_field_errors.as_ul|cut:"*" }}
+		{{ form.username.errors.as_ul }}
+		{{ form.password.errors.as_ul }}
 	{% endif %}
 </div>
 
