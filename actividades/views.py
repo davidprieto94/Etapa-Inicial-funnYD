@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def listActividades(request):	
+	return render(request, "list_actividades.html")

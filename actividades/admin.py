@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from models import actividadesModel
+from actividades.models import actividadesModel
 
 admin.site.register(actividadesModel)
