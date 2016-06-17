@@ -1,9 +1,13 @@
+<!-- stylus -c -w -o css stylus\styles.styl -->
 {% extends "base.html "%}
 {% load staticfiles %}
 {% block menu %}
-	<nav class="navbar navbar-embossed menu-nav row middle">
+	<nav class="navbar navbar-embossed menu-nav-actividades row middle ">
 		<div class="col-4">
 			<h4>Actividades</h4>
+		</div>
+		<div class="botonbarranav">
+			<h4> Salir </h4>
 		</div>
 	</nav>
 {% endblock menu %}
@@ -17,7 +21,7 @@
 		<div class="actividad-content actividad-content-sc">
 			<h6>Selecciona Colores</h6>
 			<img class="actividad-image" src="{%  static "img/actividades/SelCol.png" %}" alt="" width="150px" height="150px">
-			<button class="actividades-button actividades-button-sc"> Selecciona Colores	</button>
+			<button class="actividades-button actividades-button-sc"> Selecciona Colores </button>
 		</div>
 		<div class="actividad-content actividad-content-tp">
 			<h6>Toca Piano</h6>
