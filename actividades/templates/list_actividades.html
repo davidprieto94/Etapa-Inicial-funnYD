@@ -12,37 +12,20 @@
 	</nav>
 {% endblock menu %}
 {% block  content %}
+
 	<div class="actividades">
-		<div class="actividad-content actividad-content-rd">
-			<h6>Rutina Diaria</h6>
-			<img class="actividad-image" src="{%  static "img/actividades/RutDia.png" %}" alt="" width="150px" height="150px">
-			<button class="actividades-button actividades-button-rd"> Rutina Diaria </button>
-		</div>
-		<div class="actividad-content actividad-content-sc">
-			<h6>Selecciona Colores</h6>
-			<img class="actividad-image" src="{%  static "img/actividades/SelCol.png" %}" alt="" width="150px" height="150px">
-			<button class="actividades-button actividades-button-sc"> Selecciona Colores </button>
-		</div>
-		<div class="actividad-content actividad-content-tp">
-			<h6>Toca Piano</h6>
-			<img class="actividad-image" src="{%  static "img/actividades/TocPia.png" %}" alt="" width="150px" height="150px">
-			<button class="actividades-button actividades-button-tp"> Toca Piano </button>
-		</div>
-		<div class="actividad-content actividad-content-ba">
-			<h6>Baila</h6>
-			<img class="actividad-image" src="{%  static "img/actividades/Baila.png" %}" alt="" width="150px" height="150px">
-			<button class="actividades-button actividades-button-ba"> Baila </button>
-		</div>
+		{% for actividad in actividades %}
+			<div class="actividad-content actividad-content-rd">
+				<h6>{{ actividad.nombre }}</h6>
+				<img class="actividad-image" src="{{ actividad.imagen }}" alt="" width="150px" height="150px">
+				<button class="actividades-button actividades-button-rd"> {{ actividad.nombre }}</button>
+			</div>
+		{% endfor %}	
 	</div>
 	<div class="indicadores">
 		<div class="indicadorprogreso-content">
 		 <div class="progress-bar progress-bar-warning" style="width: 10%;"></div>
 		</div>
-		<div class="indicadorbotones-content">
-		<button class="indicadorbotones-button indicadorbotones-button-rd"> W </button>
-		<button class="indicadorbotones-button indicadorbotones-button-sc"> S </button>
-		<button class="indicadorbotones-button indicadorbotones-button-tp"> A </button>
-		<button class="indicadorbotones-button indicadorbotones-button-ba"> D </button>
-		</div>
+		{% include "controles.html" %}
 	</div>
 {% endblock  %}
