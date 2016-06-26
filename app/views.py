@@ -5,3 +5,12 @@ def inicio(request):
 
 def registro(request):	
 	return render(request, "registro.html")
+
+
+
+
+
+
+
+def cambiocontraseña(request):	
+	return render(request, "cambiocontraseña.html")
