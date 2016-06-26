@@ -5,5 +5,7 @@ import app.views
 
 urlpatterns = [
     url(r'^$', app.views.inicio),
-     url(r'^registro/$', app.views.registro),
+    url(r'^registro/$', app.views.registro),
+    url(r'^ingreso/$', app.views.ingreso),
+    url(r'^plataforma/$', app.views.plataforma),
 ]

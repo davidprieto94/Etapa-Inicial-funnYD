@@ -5,3 +5,9 @@ def inicio(request):
 
 def registro(request):	
 	return render(request, "registro.html")
+
+def ingreso(request):	
+	return render(request, "ingreso.html")
+
+def plataforma(request):	
+	return render(request, "plataforma.html")
