@@ -5875,6 +5875,9 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   border-radius: 6px;
   width: 250px;
   margin: 0 auto;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
 }
 .login-form .control-group {
   margin-bottom: 6px;
