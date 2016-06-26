@@ -1,0 +1,44 @@
+{% extends "base.html "%}
+{% block menu %}
+	<nav class="navbar navbar-embossed menu-nav row middle">
+		<div class="col-4">
+			<h4>Registro</h4>
+		</div>
+		<div class="botonbarranav">
+			<button class="menu-button menu-button-sc"> Ingreso </button>
+		</div>
+	</nav>
+{% endblock menu %}
+{% block  content %}
+
+	<div class="login-form">
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Usuario" id="login-usuario">
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
+
+  			<div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Nombre" id="login-nombre">
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Apellido" id="login-apellido">
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Identificación" id="login-identificacion">
+              <label class="login-field-icon fui-credit-card" for="login-name"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Contraseña" id="login-pass">
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>	
+
+            <a class="btn btn-primary btn-lg btn-block" href="#">Registrar</a>
+            <a class="login-link" href="#">Olvidaste tu contraseña?</a>
+          </div>
+
+{% endblock  %}
