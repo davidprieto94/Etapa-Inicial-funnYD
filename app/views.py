@@ -6,19 +6,11 @@ def inicio(request):
 def registro(request):	
 	return render(request, "registro.html")
 
-<<<<<<< HEAD
 def ingreso(request):	
 	return render(request, "ingreso.html")
 
 def plataforma(request):	
 	return render(request, "plataforma.html")
-=======
-
-
-
-
-
 
 def cambiocontraseña(request):	
 	return render(request, "cambiocontraseña.html")
->>>>>>> origin/master
